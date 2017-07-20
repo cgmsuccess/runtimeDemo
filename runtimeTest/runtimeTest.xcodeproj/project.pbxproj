@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185E628E1F209D6E00B3D9CC /* RunTimeMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E628B1F209D6E00B3D9CC /* RunTimeMethodViewController.m */; };
+		185E628F1F209D6E00B3D9CC /* UIButton+xc_button.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E628D1F209D6E00B3D9CC /* UIButton+xc_button.m */; };
+		185E62971F209D8B00B3D9CC /* People+exchangeMeth.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E62921F209D8B00B3D9CC /* People+exchangeMeth.m */; };
+		185E62981F209D8B00B3D9CC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E62941F209D8B00B3D9CC /* People.m */; };
+		185E62991F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E62961F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m */; };
 		18E0DB201F18706100118EE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB1F1F18706100118EE9 /* main.m */; };
 		18E0DB231F18706100118EE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB221F18706100118EE9 /* AppDelegate.m */; };
 		18E0DB261F18706100118EE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB251F18706100118EE9 /* ViewController.m */; };
@@ -15,8 +20,6 @@
 		18E0DB2E1F18706100118EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E0DB2C1F18706100118EE9 /* LaunchScreen.storyboard */; };
 		18E0DB391F18706100118EE9 /* runtimeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB381F18706100118EE9 /* runtimeTestTests.m */; };
 		18E0DB441F18706200118EE9 /* runtimeTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB431F18706200118EE9 /* runtimeTestUITests.m */; };
-		18E0DB541F1870FA00118EE9 /* RunTimeMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB531F1870FA00118EE9 /* RunTimeMethodViewController.m */; };
-		18E0DB591F1899E200118EE9 /* UIButton+xc_button.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB581F1899E200118EE9 /* UIButton+xc_button.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185E628A1F209D6E00B3D9CC /* RunTimeMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeMethodViewController.h; sourceTree = "<group>"; };
+		185E628B1F209D6E00B3D9CC /* RunTimeMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeMethodViewController.m; sourceTree = "<group>"; };
+		185E628C1F209D6E00B3D9CC /* UIButton+xc_button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+xc_button.h"; sourceTree = "<group>"; };
+		185E628D1F209D6E00B3D9CC /* UIButton+xc_button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+xc_button.m"; sourceTree = "<group>"; };
+		185E62911F209D8B00B3D9CC /* People+exchangeMeth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "People+exchangeMeth.h"; sourceTree = "<group>"; };
+		185E62921F209D8B00B3D9CC /* People+exchangeMeth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "People+exchangeMeth.m"; sourceTree = "<group>"; };
+		185E62931F209D8B00B3D9CC /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		185E62941F209D8B00B3D9CC /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		185E62951F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeExchangeMathViewCtrl.h; sourceTree = "<group>"; };
+		185E62961F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeExchangeMathViewCtrl.m; sourceTree = "<group>"; };
 		18E0DB1B1F18706100118EE9 /* runtimeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runtimeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E0DB1F1F18706100118EE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E0DB211F18706100118EE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,10 +66,6 @@
 		18E0DB3F1F18706100118EE9 /* runtimeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = runtimeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E0DB431F18706200118EE9 /* runtimeTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = runtimeTestUITests.m; sourceTree = "<group>"; };
 		18E0DB451F18706200118EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18E0DB521F1870FA00118EE9 /* RunTimeMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeMethodViewController.h; sourceTree = "<group>"; };
-		18E0DB531F1870FA00118EE9 /* RunTimeMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeMethodViewController.m; sourceTree = "<group>"; };
-		18E0DB571F1899E200118EE9 /* UIButton+xc_button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+xc_button.h"; sourceTree = "<group>"; };
-		18E0DB581F1899E200118EE9 /* UIButton+xc_button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+xc_button.m"; sourceTree = "<group>"; };
 		18E0DB5A1F18ACC400118EE9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,12 +94,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185E62891F209D6E00B3D9CC /* runtime绑定属性 */ = {
+			isa = PBXGroup;
+			children = (
+				185E628A1F209D6E00B3D9CC /* RunTimeMethodViewController.h */,
+				185E628B1F209D6E00B3D9CC /* RunTimeMethodViewController.m */,
+				185E628C1F209D6E00B3D9CC /* UIButton+xc_button.h */,
+				185E628D1F209D6E00B3D9CC /* UIButton+xc_button.m */,
+			);
+			path = "runtime绑定属性";
+			sourceTree = "<group>";
+		};
+		185E62901F209D8B00B3D9CC /* runtime交换方法 */ = {
+			isa = PBXGroup;
+			children = (
+				185E62911F209D8B00B3D9CC /* People+exchangeMeth.h */,
+				185E62921F209D8B00B3D9CC /* People+exchangeMeth.m */,
+				185E62931F209D8B00B3D9CC /* People.h */,
+				185E62941F209D8B00B3D9CC /* People.m */,
+				185E62951F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.h */,
+				185E62961F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m */,
+			);
+			path = "runtime交换方法";
+			sourceTree = "<group>";
+		};
 		18E0DB121F18706100118EE9 = {
 			isa = PBXGroup;
 			children = (
+				185E62901F209D8B00B3D9CC /* runtime交换方法 */,
+				185E62891F209D6E00B3D9CC /* runtime绑定属性 */,
 				18E0DB5A1F18ACC400118EE9 /* PrefixHeader.pch */,
-				18E0DB551F1899A200118EE9 /* Category */,
-				18E0DB511F1870C000118EE9 /* runtime方法调用 */,
 				18E0DB1D1F18706100118EE9 /* runtimeTest */,
 				18E0DB371F18706100118EE9 /* runtimeTestTests */,
 				18E0DB421F18706100118EE9 /* runtimeTestUITests */,
@@ -148,32 +181,6 @@
 				18E0DB451F18706200118EE9 /* Info.plist */,
 			);
 			path = runtimeTestUITests;
-			sourceTree = "<group>";
-		};
-		18E0DB511F1870C000118EE9 /* runtime方法调用 */ = {
-			isa = PBXGroup;
-			children = (
-				18E0DB521F1870FA00118EE9 /* RunTimeMethodViewController.h */,
-				18E0DB531F1870FA00118EE9 /* RunTimeMethodViewController.m */,
-			);
-			path = "runtime方法调用";
-			sourceTree = "<group>";
-		};
-		18E0DB551F1899A200118EE9 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				18E0DB561F1899C400118EE9 /* 给button绑定属性 */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		18E0DB561F1899C400118EE9 /* 给button绑定属性 */ = {
-			isa = PBXGroup;
-			children = (
-				18E0DB571F1899E200118EE9 /* UIButton+xc_button.h */,
-				18E0DB581F1899E200118EE9 /* UIButton+xc_button.m */,
-			);
-			path = "给button绑定属性";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,9 +317,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E0DB541F1870FA00118EE9 /* RunTimeMethodViewController.m in Sources */,
-				18E0DB591F1899E200118EE9 /* UIButton+xc_button.m in Sources */,
+				185E628E1F209D6E00B3D9CC /* RunTimeMethodViewController.m in Sources */,
+				185E62991F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m in Sources */,
+				185E628F1F209D6E00B3D9CC /* UIButton+xc_button.m in Sources */,
 				18E0DB261F18706100118EE9 /* ViewController.m in Sources */,
+				185E62981F209D8B00B3D9CC /* People.m in Sources */,
+				185E62971F209D8B00B3D9CC /* People+exchangeMeth.m in Sources */,
 				18E0DB231F18706100118EE9 /* AppDelegate.m in Sources */,
 				18E0DB201F18706100118EE9 /* main.m in Sources */,
 			);
@@ -554,6 +564,7 @@
 				18E0DB4A1F18706200118EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18E0DB4B1F18706200118EE9 /* Build configuration list for PBXNativeTarget "runtimeTestTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +573,7 @@
 				18E0DB4D1F18706200118EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18E0DB4E1F18706200118EE9 /* Build configuration list for PBXNativeTarget "runtimeTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +582,7 @@
 				18E0DB501F18706200118EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
