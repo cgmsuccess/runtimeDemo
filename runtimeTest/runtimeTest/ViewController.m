@@ -11,6 +11,8 @@
 #import "RunTimeMethodViewController.h"
 
 //http://www.cocoachina.com/ios/20160523/16386.html
+#import "RuntimeExchangeMathViewCtrl.h"
+
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -38,6 +40,11 @@
             RunTimeMethodViewController *rtMethodCtrl = [[RunTimeMethodViewController alloc] init];
             [self.navigationController pushViewController:rtMethodCtrl animated:YES];
             break;
+        }
+        case 1:{
+            RuntimeExchangeMathViewCtrl *exchangeCtrl = [[RuntimeExchangeMathViewCtrl alloc] init];
+            [self.navigationController pushViewController:exchangeCtrl animated:YES];
+            break ;
         }
         default:
             break;

@@ -39,10 +39,10 @@
                                         <rect key="frame" x="0.0" y="120" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gkx-7U-P8Q" id="S9C-5r-KNh">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="runtime方法调用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPW-Ws-TBm">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="runtime动态绑定属性" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPW-Ws-TBm">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="xRz-Cr-Dd7"/>
                                                     </constraints>
@@ -54,6 +54,28 @@
                                             <constraints>
                                                 <constraint firstItem="pPW-Ws-TBm" firstAttribute="centerY" secondItem="S9C-5r-KNh" secondAttribute="centerY" id="HwT-bv-UWp"/>
                                                 <constraint firstItem="pPW-Ws-TBm" firstAttribute="leading" secondItem="S9C-5r-KNh" secondAttribute="leading" id="Y7w-eS-isD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bkG-jF-mAl">
+                                        <rect key="frame" x="0.0" y="164" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bkG-jF-mAl" id="d5E-vY-HiJ">
+                                            <frame key="frameInset" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="runtime交换方法" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tz5-TT-afs">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="vxU-kD-EIA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tz5-TT-afs" firstAttribute="leading" secondItem="d5E-vY-HiJ" secondAttribute="leading" id="7xr-Yq-AM1"/>
+                                                <constraint firstItem="tz5-TT-afs" firstAttribute="centerY" secondItem="d5E-vY-HiJ" secondAttribute="centerY" id="tfC-Up-0ZQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
