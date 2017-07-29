@@ -86,7 +86,6 @@ id objc_msgSend(id target, SEL sel, 参数列表...)
         
         Class class = [self class];
         
-        
         SEL original = @selector(peopleSpeak); //初始化需要被替换的原始方法      1.
         //得到类的实例方法                                                      2.
         Method original_peopleSpeak = class_getInstanceMethod(class, original);
@@ -106,7 +105,7 @@ id objc_msgSend(id target, SEL sel, 参数列表...)
         BOOL addSucess = class_addMethod(class, original, swapIMP, swapString);
         
         if (addSucess) {
-            // class_replaceMethod : 类型 + 替换的方法名 + 替换后的实现 + 参数信息
+        // class_replaceMethod : 类型 + 需要替换的方法名 + 替换后的实现 + 参数信息
             class_replaceMethod(class, swap, originalIMP, originalString);
         }else{
             // 添加失败，表明已经有这个方法，直接交换

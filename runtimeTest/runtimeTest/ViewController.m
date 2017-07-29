@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 #import "RunTimeMethodViewController.h"
-
+#import "RuntimeGetAllMethodCtrl.h"
 //http://www.cocoachina.com/ios/20160523/16386.html
 #import "RuntimeExchangeMathViewCtrl.h"
 
@@ -44,6 +44,11 @@
         case 1:{
             RuntimeExchangeMathViewCtrl *exchangeCtrl = [[RuntimeExchangeMathViewCtrl alloc] init];
             [self.navigationController pushViewController:exchangeCtrl animated:YES];
+            break ;
+        }
+        case 2:{
+            RuntimeGetAllMethodCtrl *getAllMethod = [[RuntimeGetAllMethodCtrl alloc] init];
+            [self.navigationController pushViewController:getAllMethod animated:YES];
             break ;
         }
         default:

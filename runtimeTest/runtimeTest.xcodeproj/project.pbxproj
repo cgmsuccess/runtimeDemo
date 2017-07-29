@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180410F31F2C5D99004A21D9 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 180410F21F2C5D99004A21D9 /* Dog.m */; };
+		183678521F2B1AFA00C9F681 /* RuntimeGetAllMethodCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 183678511F2B1AFA00C9F681 /* RuntimeGetAllMethodCtrl.m */; };
 		185E628E1F209D6E00B3D9CC /* RunTimeMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E628B1F209D6E00B3D9CC /* RunTimeMethodViewController.m */; };
 		185E628F1F209D6E00B3D9CC /* UIButton+xc_button.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E628D1F209D6E00B3D9CC /* UIButton+xc_button.m */; };
 		185E62971F209D8B00B3D9CC /* People+exchangeMeth.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E62921F209D8B00B3D9CC /* People+exchangeMeth.m */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180410F11F2C5D99004A21D9 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		180410F21F2C5D99004A21D9 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		183678501F2B1AFA00C9F681 /* RuntimeGetAllMethodCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeGetAllMethodCtrl.h; sourceTree = "<group>"; };
+		183678511F2B1AFA00C9F681 /* RuntimeGetAllMethodCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeGetAllMethodCtrl.m; sourceTree = "<group>"; };
 		185E628A1F209D6E00B3D9CC /* RunTimeMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeMethodViewController.h; sourceTree = "<group>"; };
 		185E628B1F209D6E00B3D9CC /* RunTimeMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeMethodViewController.m; sourceTree = "<group>"; };
 		185E628C1F209D6E00B3D9CC /* UIButton+xc_button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+xc_button.h"; sourceTree = "<group>"; };
@@ -94,6 +100,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1836784F1F2B1A8700C9F681 /* runtime获取类所有属性方法 */ = {
+			isa = PBXGroup;
+			children = (
+				183678501F2B1AFA00C9F681 /* RuntimeGetAllMethodCtrl.h */,
+				183678511F2B1AFA00C9F681 /* RuntimeGetAllMethodCtrl.m */,
+				180410F11F2C5D99004A21D9 /* Dog.h */,
+				180410F21F2C5D99004A21D9 /* Dog.m */,
+			);
+			path = "runtime获取类所有属性方法";
+			sourceTree = "<group>";
+		};
 		185E62891F209D6E00B3D9CC /* runtime绑定属性 */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +138,7 @@
 		18E0DB121F18706100118EE9 = {
 			isa = PBXGroup;
 			children = (
+				1836784F1F2B1A8700C9F681 /* runtime获取类所有属性方法 */,
 				185E62901F209D8B00B3D9CC /* runtime交换方法 */,
 				185E62891F209D6E00B3D9CC /* runtime绑定属性 */,
 				18E0DB5A1F18ACC400118EE9 /* PrefixHeader.pch */,
@@ -318,6 +336,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				185E628E1F209D6E00B3D9CC /* RunTimeMethodViewController.m in Sources */,
+				183678521F2B1AFA00C9F681 /* RuntimeGetAllMethodCtrl.m in Sources */,
+				180410F31F2C5D99004A21D9 /* Dog.m in Sources */,
 				185E62991F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m in Sources */,
 				185E628F1F209D6E00B3D9CC /* UIButton+xc_button.m in Sources */,
 				18E0DB261F18706100118EE9 /* ViewController.m in Sources */,
