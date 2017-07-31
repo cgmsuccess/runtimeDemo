@@ -7,7 +7,7 @@
 //
 
 #import "RuntimeExchangeMathViewCtrl.h"
-
+#import "People+exchangeMeth.h"
 #import <objc/runtime.h>
 
 #import "People.h"
@@ -30,7 +30,9 @@
     self.people = [People new];
     
     
-    [self.people peopleSpeak];
+    [self.people peopleSpeak]; //别玩了。吃饭吧
+    [self.people eatFood];  // 听说你是铁头娃
+    
     
 #if 0
     [self.people peopleSpeak];

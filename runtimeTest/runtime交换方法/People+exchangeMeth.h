@@ -10,4 +10,6 @@
 
 @interface People (exchangeMeth)
 
+-(void)eatFood;
+
 @end

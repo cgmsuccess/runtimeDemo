@@ -67,6 +67,8 @@ id objc_msgSend(id target, SEL sel, 参数列表...)
 */
 +(void)load
 {
+    
+#if 0
     // Method : 包含了一个方法的  方法名 + 实现 + 参数个数及类型 + 返回值个数及类型 等信息
     // class_getInstanceMethod : 通过类名 + 方法名 获取一个 Method
     // class_getMethodImplementation: 类名 + 方法名
@@ -114,6 +116,14 @@ id objc_msgSend(id target, SEL sel, 参数列表...)
         
         
     });
+#endif 
+    
+    //上面写的很繁琐 ,这是想要被替换的方法  
+    Method originalMethod = class_getInstanceMethod([self class], NSSelectorFromString(@"peopleSpeak"));
+    //替换方法
+    Method exchangeMethod = class_getInstanceMethod([self class], NSSelectorFromString(@"eatFood"));
+    
+    method_exchangeImplementations(originalMethod, exchangeMethod);
     
 }
 
