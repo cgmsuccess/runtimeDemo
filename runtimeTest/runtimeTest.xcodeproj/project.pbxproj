@@ -14,6 +14,8 @@
 		185E62971F209D8B00B3D9CC /* People+exchangeMeth.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E62921F209D8B00B3D9CC /* People+exchangeMeth.m */; };
 		185E62981F209D8B00B3D9CC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E62941F209D8B00B3D9CC /* People.m */; };
 		185E62991F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E62961F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m */; };
+		18BA02BA1F316E50007537CF /* RuntimeArchiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA02B91F316E50007537CF /* RuntimeArchiveViewController.m */; };
+		18BA02BD1F316E79007537CF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA02BC1F316E79007537CF /* Person.m */; };
 		18E0DB201F18706100118EE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB1F1F18706100118EE9 /* main.m */; };
 		18E0DB231F18706100118EE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB221F18706100118EE9 /* AppDelegate.m */; };
 		18E0DB261F18706100118EE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB251F18706100118EE9 /* ViewController.m */; };
@@ -56,6 +58,10 @@
 		185E62941F209D8B00B3D9CC /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
 		185E62951F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeExchangeMathViewCtrl.h; sourceTree = "<group>"; };
 		185E62961F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeExchangeMathViewCtrl.m; sourceTree = "<group>"; };
+		18BA02B81F316E50007537CF /* RuntimeArchiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeArchiveViewController.h; sourceTree = "<group>"; };
+		18BA02B91F316E50007537CF /* RuntimeArchiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeArchiveViewController.m; sourceTree = "<group>"; };
+		18BA02BB1F316E79007537CF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		18BA02BC1F316E79007537CF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		18E0DB1B1F18706100118EE9 /* runtimeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runtimeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E0DB1F1F18706100118EE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E0DB211F18706100118EE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,9 +141,21 @@
 			path = "runtime交换方法";
 			sourceTree = "<group>";
 		};
+		18BA02B71F316E0B007537CF /* runtime归档解档 */ = {
+			isa = PBXGroup;
+			children = (
+				18BA02B81F316E50007537CF /* RuntimeArchiveViewController.h */,
+				18BA02B91F316E50007537CF /* RuntimeArchiveViewController.m */,
+				18BA02BB1F316E79007537CF /* Person.h */,
+				18BA02BC1F316E79007537CF /* Person.m */,
+			);
+			path = "runtime归档解档";
+			sourceTree = "<group>";
+		};
 		18E0DB121F18706100118EE9 = {
 			isa = PBXGroup;
 			children = (
+				18BA02B71F316E0B007537CF /* runtime归档解档 */,
 				1836784F1F2B1A8700C9F681 /* runtime获取类所有属性方法 */,
 				185E62901F209D8B00B3D9CC /* runtime交换方法 */,
 				185E62891F209D6E00B3D9CC /* runtime绑定属性 */,
@@ -337,9 +355,11 @@
 			files = (
 				185E628E1F209D6E00B3D9CC /* RunTimeMethodViewController.m in Sources */,
 				183678521F2B1AFA00C9F681 /* RuntimeGetAllMethodCtrl.m in Sources */,
+				18BA02BA1F316E50007537CF /* RuntimeArchiveViewController.m in Sources */,
 				180410F31F2C5D99004A21D9 /* Dog.m in Sources */,
 				185E62991F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m in Sources */,
 				185E628F1F209D6E00B3D9CC /* UIButton+xc_button.m in Sources */,
+				18BA02BD1F316E79007537CF /* Person.m in Sources */,
 				18E0DB261F18706100118EE9 /* ViewController.m in Sources */,
 				185E62981F209D8B00B3D9CC /* People.m in Sources */,
 				185E62971F209D8B00B3D9CC /* People+exchangeMeth.m in Sources */,
