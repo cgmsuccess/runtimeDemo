@@ -34,6 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor yellowColor];
     
 #if 0
     [self getPrivateAllMethod];
@@ -41,16 +42,16 @@
     [self getPrivateAllIvar];
 #endif
     
-#if 1
+#if 0
     
     [self getClassAllIvar:[self class]];
     [self getClassAllMethod:[self class]];
 #endif
 //    
-//    Dog *dog = [Dog new];
-//    NSLog(@"%@",object_getClass([dog class]));
-//    [self getClassAllMethod:[dog class]];
-//    [self getClassAllMethod:[dog class]];
+    Dog *dog = [Dog new];
+    NSLog(@"%@",object_getClass([dog class]));
+    [self getClassAllMethod:[dog class]];
+    [self getClassAllMethod:[dog class]];
 }
 
 
@@ -91,6 +92,7 @@
         NSString *methodName = [NSString stringWithCString:sel_getName(method) encoding:NSUTF8StringEncoding];
         NSLog(@"方法 : %@",methodName);
     }
+    free(methods);  //这个一定要手动释放，不然会造成内存泄漏
 }
 
 #pragma mark - 获取当前类所有属性 包括私有的
@@ -104,6 +106,7 @@
         NSString *type = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
         NSLog(@"属性 --> %@ 和 %@",name,type);
     }
+    free(ivers);
 }
 
 #pragma mark - 获取所有的方法(包括私有的)
@@ -116,6 +119,7 @@
         NSString *methodName = [NSString stringWithCString:sel_getName(method) encoding:NSUTF8StringEncoding];
         NSLog(@"方法 : %@",methodName);
     }
+    free(methods);
 }
 
 #pragma mark - 获取所以得属性（包括私有的）
@@ -129,9 +133,8 @@
         NSString *name = [NSString stringWithUTF8String:ivar_getName(ivar)];
         NSString *type = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
         NSLog(@"属性 --> %@ 和 %@",name,type);
-
     }
-    
+    free(ivers);
 }
 
 - (void)didReceiveMemoryWarning {
