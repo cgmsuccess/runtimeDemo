@@ -12,7 +12,7 @@
 #import "RuntimeGetAllMethodCtrl.h"
 //http://www.cocoachina.com/ios/20160523/16386.html
 #import "RuntimeExchangeMathViewCtrl.h"
-
+#import "RuntimeArchiveViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -51,6 +51,12 @@
             [self.navigationController pushViewController:getAllMethod animated:YES];
             break ;
         }
+        case 3:{
+            RuntimeArchiveViewController *archive = [[RuntimeArchiveViewController   alloc]init];
+            [self.navigationController pushViewController:archive animated:YES];
+            break;
+        }
+            
         default:
             break;
     }

@@ -41,15 +41,16 @@
     [self getPrivateAllIvar];
 #endif
     
-#if 0
+#if 1
+    
     [self getClassAllIvar:[self class]];
     [self getClassAllMethod:[self class]];
 #endif
-    
-    Dog *dog = [Dog new];
-    NSLog(@"%@",object_getClass([dog class]));
-    [self getClassAllMethod:[dog class]];
-    [self getClassAllMethod:[dog class]];
+//    
+//    Dog *dog = [Dog new];
+//    NSLog(@"%@",object_getClass([dog class]));
+//    [self getClassAllMethod:[dog class]];
+//    [self getClassAllMethod:[dog class]];
 }
 
 
@@ -92,7 +93,7 @@
     }
 }
 
-#pragma mark - 获取当前类所有属性
+#pragma mark - 获取当前类所有属性 包括私有的
 - (void)getClassAllIvar:(Class )class
 {
     unsigned int count = 0 ;
