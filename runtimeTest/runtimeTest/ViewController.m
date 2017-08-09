@@ -13,6 +13,7 @@
 //http://www.cocoachina.com/ios/20160523/16386.html
 #import "RuntimeExchangeMathViewCtrl.h"
 #import "RuntimeArchiveViewController.h"
+#import "KVCViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -54,6 +55,11 @@
         case 3:{
             RuntimeArchiveViewController *archive = [[RuntimeArchiveViewController   alloc]init];
             [self.navigationController pushViewController:archive animated:YES];
+            break;
+        }
+        case 4:{
+            KVCViewController *kvCtrl = [[KVCViewController alloc] init];
+            [self.navigationController pushViewController:kvCtrl animated:YES];
             break;
         }
             

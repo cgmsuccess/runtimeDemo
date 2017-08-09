@@ -53,11 +53,6 @@ typedef void (^myblock)(void);
 }
 
 
--(void)testblock:(myblock)block
-{
-    block();
-}
-
 
 /**
     自定义对象的沙盒存取  NSKeyedArchiver 必须用这个

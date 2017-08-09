@@ -24,6 +24,9 @@
 		18E0DB2E1F18706100118EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E0DB2C1F18706100118EE9 /* LaunchScreen.storyboard */; };
 		18E0DB391F18706100118EE9 /* runtimeTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB381F18706100118EE9 /* runtimeTestTests.m */; };
 		18E0DB441F18706200118EE9 /* runtimeTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB431F18706200118EE9 /* runtimeTestUITests.m */; };
+		F727FDE11F3B56EF0018C455 /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F727FDE01F3B56EF0018C455 /* KVCViewController.m */; };
+		F727FDEA1F3B5A290018C455 /* KVCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F727FDE91F3B5A290018C455 /* KVCPerson.m */; };
+		F727FDED1F3B5A570018C455 /* KVCDog.m in Sources */ = {isa = PBXBuildFile; fileRef = F727FDEC1F3B5A570018C455 /* KVCDog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,12 @@
 		18E0DB431F18706200118EE9 /* runtimeTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = runtimeTestUITests.m; sourceTree = "<group>"; };
 		18E0DB451F18706200118EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E0DB5A1F18ACC400118EE9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F727FDDF1F3B56EF0018C455 /* KVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
+		F727FDE01F3B56EF0018C455 /* KVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
+		F727FDE81F3B5A290018C455 /* KVCPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCPerson.h; sourceTree = "<group>"; };
+		F727FDE91F3B5A290018C455 /* KVCPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCPerson.m; sourceTree = "<group>"; };
+		F727FDEB1F3B5A570018C455 /* KVCDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCDog.h; sourceTree = "<group>"; };
+		F727FDEC1F3B5A570018C455 /* KVCDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCDog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +164,7 @@
 		18E0DB121F18706100118EE9 = {
 			isa = PBXGroup;
 			children = (
+				F727FDDE1F3B56D60018C455 /* KVC */,
 				18BA02B71F316E0B007537CF /* runtime归档解档 */,
 				1836784F1F2B1A8700C9F681 /* runtime获取类所有属性方法 */,
 				185E62901F209D8B00B3D9CC /* runtime交换方法 */,
@@ -217,6 +227,19 @@
 				18E0DB451F18706200118EE9 /* Info.plist */,
 			);
 			path = runtimeTestUITests;
+			sourceTree = "<group>";
+		};
+		F727FDDE1F3B56D60018C455 /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				F727FDDF1F3B56EF0018C455 /* KVCViewController.h */,
+				F727FDE01F3B56EF0018C455 /* KVCViewController.m */,
+				F727FDE81F3B5A290018C455 /* KVCPerson.h */,
+				F727FDE91F3B5A290018C455 /* KVCPerson.m */,
+				F727FDEB1F3B5A570018C455 /* KVCDog.h */,
+				F727FDEC1F3B5A570018C455 /* KVCDog.m */,
+			);
+			path = KVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +377,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				185E628E1F209D6E00B3D9CC /* RunTimeMethodViewController.m in Sources */,
+				F727FDEA1F3B5A290018C455 /* KVCPerson.m in Sources */,
+				F727FDE11F3B56EF0018C455 /* KVCViewController.m in Sources */,
 				183678521F2B1AFA00C9F681 /* RuntimeGetAllMethodCtrl.m in Sources */,
 				18BA02BA1F316E50007537CF /* RuntimeArchiveViewController.m in Sources */,
 				180410F31F2C5D99004A21D9 /* Dog.m in Sources */,
@@ -361,6 +386,7 @@
 				185E628F1F209D6E00B3D9CC /* UIButton+xc_button.m in Sources */,
 				18BA02BD1F316E79007537CF /* Person.m in Sources */,
 				18E0DB261F18706100118EE9 /* ViewController.m in Sources */,
+				F727FDED1F3B5A570018C455 /* KVCDog.m in Sources */,
 				185E62981F209D8B00B3D9CC /* People.m in Sources */,
 				185E62971F209D8B00B3D9CC /* People+exchangeMeth.m in Sources */,
 				18E0DB231F18706100118EE9 /* AppDelegate.m in Sources */,
