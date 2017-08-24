@@ -12,7 +12,7 @@
 
 -(void)peopleSpeak
 {
-    NSLog(@"听说你是铁头娃");
+    XCLog(@"听说你是铁头娃");
 }
 
 @end

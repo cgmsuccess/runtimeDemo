@@ -19,7 +19,7 @@
 
 -(void)sleep
 {
-    NSLog(@"碎觉");
+    XCLog(@"碎觉");
 }
 
 @end

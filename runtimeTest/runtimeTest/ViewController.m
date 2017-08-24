@@ -14,7 +14,7 @@
 #import "RuntimeExchangeMathViewCtrl.h"
 #import "RuntimeArchiveViewController.h"
 #import "KVCViewController.h"
-
+#import "StructTestViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -29,8 +29,6 @@
     // 处理cell间距,默认tableView分组样式,有额外头部和尾部间距
     self.tableView.sectionHeaderHeight = 30;
     self.tableView.sectionFooterHeight = 0;
-
-
 }
 
 
@@ -62,6 +60,11 @@
             [self.navigationController pushViewController:kvCtrl animated:YES];
             break;
         }
+        case 5:{
+            StructTestViewController *structCtrl = [[StructTestViewController alloc] init];
+            [self.navigationController pushViewController:structCtrl animated:YES];
+            break;
+        }
             
         default:
             break;
@@ -72,7 +75,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"indexPath.secton = %ld , indexPath.row = %ld" ,indexPath.section ,indexPath.row);
+    XCLog(@"indexPath.secton = %ld , indexPath.row = %ld" ,indexPath.section ,indexPath.row);
     [self cilck:indexPath.row];
 }
 

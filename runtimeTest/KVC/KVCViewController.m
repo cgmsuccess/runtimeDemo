@@ -59,10 +59,10 @@
     //取出人 的dataSource 每一个元素的name的值，再把这些值放到一个新的数组里面
     NSArray *dogNames = [p valueForKeyPath:@"dataSource.name"];
     
-    NSLog(@"dogNames = %@" ,dogNames);
+    XCLog(@"dogNames = %@" ,dogNames);
     
     double ages = [[p valueForKeyPath:@"dataSource.@sum.age"] doubleValue];
-    NSLog(@"ages = %f",ages);
+    XCLog(@"ages = %f",ages);
 }
 
 /**
@@ -83,7 +83,7 @@ forKey  和 forKeyPath 区别
     // *****  [p setValue:@"小花" forKey:@"dog.name"];  ******/
     //报错 this class is not key value coding-compliant for the key dog.name.'  ，也是就是说他在person类里面去找 dog.name 。所有找不到报错 可以forKeyPath更为强大
     
-    NSLog(@"p.dog.name = %@" ,p.dog.name);
+    XCLog(@"p.dog.name = %@" ,p.dog.name);
     
 }
 
@@ -94,11 +94,11 @@ forKey  和 forKeyPath 区别
 {
     KVCPerson *p = [KVCPerson new];
     p.speak = @"老铁双击 66";
-    NSLog(@"p.speak %@ ",p.speak);
+    XCLog(@"p.speak %@ ",p.speak);
     [p setValue:@"没毛病。老铁" forKey:@"_speak"];
 //    [p setValue:@"没毛病。老铁" forKey:@"speak"];  和上面等效,为什么_speak 和 speak没区别，因为kvc会先去找speak属性，找不到他就回去找_speak
 
-    NSLog(@"%@",p.speak);
+    XCLog(@"%@",p.speak);
 }
 
 /**
@@ -110,7 +110,7 @@ forKey  和 forKeyPath 区别
     //runtime 获取所有的变量
     [self getClassAllIvar:[KVCPerson class]];
     [p setValue:@"茅草屋" forKey:@"house"]; //赋值，修改等。 所有object-c 没有真正的私有
-    NSLog(@"%@",[p valueForKey:@"house"]); //取值。
+    XCLog(@"%@",[p valueForKey:@"house"]); //取值。
 }
 
 
@@ -123,7 +123,7 @@ forKey  和 forKeyPath 区别
         Ivar ivar = ivers[i];
         NSString *name = [NSString stringWithUTF8String:ivar_getName(ivar)];
         NSString *type = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
-        NSLog(@"属性 --> %@ 和 %@",name,type);
+        XCLog(@"属性 --> %@ 和 %@",name,type);
     }
     free(ivers);
 }

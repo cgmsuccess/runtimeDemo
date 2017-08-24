@@ -129,7 +129,7 @@ id objc_msgSend(id target, SEL sel, 参数列表...)
 
 -(void)eatFood
 {
-    NSLog(@"别玩了。吃饭吧");
+    XCLog(@"别玩了。吃饭吧");
 }
 
 

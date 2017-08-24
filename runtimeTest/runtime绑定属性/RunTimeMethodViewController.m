@@ -40,13 +40,13 @@
 
     //点语法
     runtimelButton.cilckBlock = ^(UIButton *btn){
-        NSLog(@"这是给button协议属性定义的block，调用方法 + buttonName = %@" ,btn.customName);
+        XCLog(@"这是给button协议属性定义的block，调用方法 + buttonName = %@" ,btn.customName);
     };
     
 #if 0
     //set 语法
     [runtimelButton setCilckBlock:^(UIButton *btn){
-        NSLog(@"set 语法 调用");
+        XCLog(@"set 语法 调用");
     }];
 #endif
     

@@ -14,6 +14,7 @@
 		185E62971F209D8B00B3D9CC /* People+exchangeMeth.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E62921F209D8B00B3D9CC /* People+exchangeMeth.m */; };
 		185E62981F209D8B00B3D9CC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E62941F209D8B00B3D9CC /* People.m */; };
 		185E62991F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 185E62961F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m */; };
+		18916EFF1F4E9F0D00AF1D88 /* StructTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18916EFE1F4E9F0D00AF1D88 /* StructTestViewController.m */; };
 		18BA02BA1F316E50007537CF /* RuntimeArchiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA02B91F316E50007537CF /* RuntimeArchiveViewController.m */; };
 		18BA02BD1F316E79007537CF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA02BC1F316E79007537CF /* Person.m */; };
 		18E0DB201F18706100118EE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0DB1F1F18706100118EE9 /* main.m */; };
@@ -61,6 +62,8 @@
 		185E62941F209D8B00B3D9CC /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
 		185E62951F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeExchangeMathViewCtrl.h; sourceTree = "<group>"; };
 		185E62961F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeExchangeMathViewCtrl.m; sourceTree = "<group>"; };
+		18916EFD1F4E9F0D00AF1D88 /* StructTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructTestViewController.h; sourceTree = "<group>"; };
+		18916EFE1F4E9F0D00AF1D88 /* StructTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructTestViewController.m; sourceTree = "<group>"; };
 		18BA02B81F316E50007537CF /* RuntimeArchiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeArchiveViewController.h; sourceTree = "<group>"; };
 		18BA02B91F316E50007537CF /* RuntimeArchiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeArchiveViewController.m; sourceTree = "<group>"; };
 		18BA02BB1F316E79007537CF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -150,6 +153,15 @@
 			path = "runtime交换方法";
 			sourceTree = "<group>";
 		};
+		18916EFC1F4E87E800AF1D88 /* struct结构体 */ = {
+			isa = PBXGroup;
+			children = (
+				18916EFD1F4E9F0D00AF1D88 /* StructTestViewController.h */,
+				18916EFE1F4E9F0D00AF1D88 /* StructTestViewController.m */,
+			);
+			path = "struct结构体";
+			sourceTree = "<group>";
+		};
 		18BA02B71F316E0B007537CF /* runtime归档解档 */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +176,7 @@
 		18E0DB121F18706100118EE9 = {
 			isa = PBXGroup;
 			children = (
+				18916EFC1F4E87E800AF1D88 /* struct结构体 */,
 				F727FDDE1F3B56D60018C455 /* KVC */,
 				18BA02B71F316E0B007537CF /* runtime归档解档 */,
 				1836784F1F2B1A8700C9F681 /* runtime获取类所有属性方法 */,
@@ -385,6 +398,7 @@
 				185E62991F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m in Sources */,
 				185E628F1F209D6E00B3D9CC /* UIButton+xc_button.m in Sources */,
 				18BA02BD1F316E79007537CF /* Person.m in Sources */,
+				18916EFF1F4E9F0D00AF1D88 /* StructTestViewController.m in Sources */,
 				18E0DB261F18706100118EE9 /* ViewController.m in Sources */,
 				F727FDED1F3B5A570018C455 /* KVCDog.m in Sources */,
 				185E62981F209D8B00B3D9CC /* People.m in Sources */,

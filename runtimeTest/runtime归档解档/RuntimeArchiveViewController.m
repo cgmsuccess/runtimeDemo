@@ -66,17 +66,17 @@ typedef void (^myblock)(void);
     
     NSString *chahe = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
     NSString *path = [chahe stringByAppendingString:@"accton.archive"];
-    NSLog(@"path = %@",path) ;
+    XCLog(@"path = %@",path) ;
     //自定义对象的存储必须用 NSKeyedArchiver  不能用 writeToFile
     //writeToFile适用 NSArray 和 NSDictionary
     [NSKeyedArchiver archiveRootObject:p toFile:path]; //自定义对象   沙盒 存
     Person *person =  [NSKeyedUnarchiver unarchiveObjectWithFile:path];// 自定义对象   沙盒 取
-    NSLog(@"%@ %@ %f" ,person.name,person.age,person.weight);
+    XCLog(@"%@ %@ %f" ,person.name,person.age,person.weight);
     
     
     //这里copy Person 必须实现NSCoying
 //    Person *p1 = [Person mutableCopy];
-//    NSLog(@"p1.name = %@" ,p1.name);
+//    XCLog(@"p1.name = %@" ,p1.name);
     
 }
 
@@ -90,10 +90,10 @@ typedef void (^myblock)(void);
     NSDictionary *dic = @{@"name":@"xiaoming",@"age":@"18"};
     //存
     [dic writeToFile:path atomically:YES];
-    NSLog(@"paths = %@",path);
+    XCLog(@"paths = %@",path);
     //取
     NSDictionary *dicM = [NSDictionary dictionaryWithContentsOfFile:path];
-    NSLog(@"dicM = %@",dicM);
+    XCLog(@"dicM = %@",dicM);
 }
 
 - (void)didReceiveMemoryWarning {

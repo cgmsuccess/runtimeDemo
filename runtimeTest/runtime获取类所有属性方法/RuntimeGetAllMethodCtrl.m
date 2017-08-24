@@ -49,7 +49,7 @@
 #endif
 //    
     Dog *dog = [Dog new];
-    NSLog(@"%@",object_getClass([dog class]));
+    XCLog(@"%@",object_getClass([dog class]));
     [self getClassAllMethod:[dog class]];
     [self getClassAllMethod:[dog class]];
 }
@@ -90,7 +90,7 @@
     for (int i =0; i<count; i++) {
         SEL method = method_getName(methods[i]);
         NSString *methodName = [NSString stringWithCString:sel_getName(method) encoding:NSUTF8StringEncoding];
-        NSLog(@"方法 : %@",methodName);
+        XCLog(@"方法 : %@",methodName);
     }
     free(methods);  //这个一定要手动释放，不然会造成内存泄漏
 }
@@ -104,7 +104,7 @@
         Ivar ivar = ivers[i];
         NSString *name = [NSString stringWithUTF8String:ivar_getName(ivar)];
         NSString *type = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
-        NSLog(@"属性 --> %@ 和 %@",name,type);
+        XCLog(@"属性 --> %@ 和 %@",name,type);
     }
     free(ivers);
 }
@@ -117,7 +117,7 @@
     for (int i =0; i<count; i++) {
         SEL method = method_getName(methods[i]);
         NSString *methodName = [NSString stringWithCString:sel_getName(method) encoding:NSUTF8StringEncoding];
-        NSLog(@"方法 : %@",methodName);
+        XCLog(@"方法 : %@",methodName);
     }
     free(methods);
 }
@@ -132,7 +132,7 @@
     
         NSString *name = [NSString stringWithUTF8String:ivar_getName(ivar)];
         NSString *type = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
-        NSLog(@"属性 --> %@ 和 %@",name,type);
+        XCLog(@"属性 --> %@ 和 %@",name,type);
     }
     free(ivers);
 }
