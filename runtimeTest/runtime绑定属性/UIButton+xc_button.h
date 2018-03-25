@@ -16,9 +16,16 @@ typedef void(^ListeningBtnBlock)(UIButton *btn);
 @interface UIButton (xc_button)
 
 /**
- 我们动态给 BUtton 添加一个属性
+ 我们动态给 BUtton 添加一个字符串属性
  */
 @property (nonatomic,copy)NSString *customName ;
+
+
+/**   给button 绑定一个bool属性       ****/
+@property (nonatomic,assign)BOOL  isBangding;
+
+/**     给button 绑定一个 integer 属性      ****/
+@property (nonatomic,assign)NSInteger buttonIndex;
 
 
 

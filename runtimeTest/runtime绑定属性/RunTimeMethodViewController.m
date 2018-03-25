@@ -36,7 +36,9 @@
     [runtimelButton setTitle:@"runtimelButton" forState:UIControlStateNormal];
     [self.view addSubview:runtimelButton];
     runtimelButton.customName = @"runtimelButton" ;
-    
+    runtimelButton.isBangding = YES;
+    runtimelButton.buttonIndex = 5;
+    XCLog(@" runtimelButton.isBangding = %d  runtimelButton.buttonIndex = %ld", runtimelButton.isBangding ,  runtimelButton.buttonIndex );
 
     //点语法
     runtimelButton.cilckBlock = ^(UIButton *btn){
