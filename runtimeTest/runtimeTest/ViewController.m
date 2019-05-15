@@ -70,6 +70,11 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
+        case 7:{
+            UIViewController *vc = [NSClassFromString(@"FunctionCodeDemoVc") new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
             
         default:
             break;

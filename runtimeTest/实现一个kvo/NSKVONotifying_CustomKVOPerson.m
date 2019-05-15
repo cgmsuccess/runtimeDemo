@@ -13,14 +13,20 @@
 
 -(void)setAge:(NSInteger)age{
     
+    NSLog(@"_age = %ld" , age);
+    
+    [self willChangeValueForKey:@"age"];
+
     [super setAge:age];
     
     NSLog(@"进入了派生类");
-    [self willChangeValueForKey:@"age"];
-    
-    [objc_getAssociatedObject(self, @"observer") observeValueForKeyPath:@"age" ofObject:self change:nil context:nil];
     
     [self didChangeValueForKey:@"age"];
+
+    [objc_getAssociatedObject(self, @"observer") observeValueForKeyPath:@"age" ofObject:self change:nil context:nil];
+    
+    NSLog(@"_age = %ld" , age);
+
     
 }
 

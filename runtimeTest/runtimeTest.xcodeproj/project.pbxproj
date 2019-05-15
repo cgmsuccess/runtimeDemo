@@ -30,6 +30,8 @@
 		EA2A3A15228BBB5B00AF88AA /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2A3A14228BBB5B00AF88AA /* NSObject+KVO.m */; };
 		EA2A3A18228BBC4400AF88AA /* NSKVONotifying_CustomKVOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2A3A17228BBC4400AF88AA /* NSKVONotifying_CustomKVOPerson.m */; };
 		EA2A3A1C228BC55E00AF88AA /* UIViewController+VcListening.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2A3A1B228BC55E00AF88AA /* UIViewController+VcListening.m */; };
+		EA2A3A20228BEE5C00AF88AA /* FunctionCodeDemoVc.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2A3A1F228BEE5C00AF88AA /* FunctionCodeDemoVc.m */; };
+		EA2A3A23228BEE7B00AF88AA /* JiSuanqiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2A3A22228BEE7B00AF88AA /* JiSuanqiManager.m */; };
 		F727FDE11F3B56EF0018C455 /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F727FDE01F3B56EF0018C455 /* KVCViewController.m */; };
 		F727FDEA1F3B5A290018C455 /* KVCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F727FDE91F3B5A290018C455 /* KVCPerson.m */; };
 		F727FDED1F3B5A570018C455 /* KVCDog.m in Sources */ = {isa = PBXBuildFile; fileRef = F727FDEC1F3B5A570018C455 /* KVCDog.m */; };
@@ -100,6 +102,10 @@
 		EA2A3A17228BBC4400AF88AA /* NSKVONotifying_CustomKVOPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSKVONotifying_CustomKVOPerson.m; sourceTree = "<group>"; };
 		EA2A3A1A228BC55E00AF88AA /* UIViewController+VcListening.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VcListening.h"; sourceTree = "<group>"; };
 		EA2A3A1B228BC55E00AF88AA /* UIViewController+VcListening.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VcListening.m"; sourceTree = "<group>"; };
+		EA2A3A1E228BEE5C00AF88AA /* FunctionCodeDemoVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionCodeDemoVc.h; sourceTree = "<group>"; };
+		EA2A3A1F228BEE5C00AF88AA /* FunctionCodeDemoVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionCodeDemoVc.m; sourceTree = "<group>"; };
+		EA2A3A21228BEE7B00AF88AA /* JiSuanqiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiSuanqiManager.h; sourceTree = "<group>"; };
+		EA2A3A22228BEE7B00AF88AA /* JiSuanqiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiSuanqiManager.m; sourceTree = "<group>"; };
 		F727FDDF1F3B56EF0018C455 /* KVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
 		F727FDE01F3B56EF0018C455 /* KVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
 		F727FDE81F3B5A290018C455 /* KVCPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCPerson.h; sourceTree = "<group>"; };
@@ -191,6 +197,7 @@
 		18E0DB121F18706100118EE9 = {
 			isa = PBXGroup;
 			children = (
+				EA2A3A1D228BEE2600AF88AA /* 函数式编程练习 */,
 				EA2A3A19228BC49B00AF88AA /* 控制器监听 */,
 				EA2A3A0C228BB7E400AF88AA /* 实现一个kvo */,
 				18916EFC1F4E87E800AF1D88 /* struct结构体 */,
@@ -281,6 +288,17 @@
 				EA2A3A1B228BC55E00AF88AA /* UIViewController+VcListening.m */,
 			);
 			path = "控制器监听";
+			sourceTree = "<group>";
+		};
+		EA2A3A1D228BEE2600AF88AA /* 函数式编程练习 */ = {
+			isa = PBXGroup;
+			children = (
+				EA2A3A1E228BEE5C00AF88AA /* FunctionCodeDemoVc.h */,
+				EA2A3A1F228BEE5C00AF88AA /* FunctionCodeDemoVc.m */,
+				EA2A3A21228BEE7B00AF88AA /* JiSuanqiManager.h */,
+				EA2A3A22228BEE7B00AF88AA /* JiSuanqiManager.m */,
+			);
+			path = "函数式编程练习";
 			sourceTree = "<group>";
 		};
 		F727FDDE1F3B56D60018C455 /* KVC */ = {
@@ -436,6 +454,7 @@
 				183678521F2B1AFA00C9F681 /* RuntimeGetAllMethodCtrl.m in Sources */,
 				18BA02BA1F316E50007537CF /* RuntimeArchiveViewController.m in Sources */,
 				180410F31F2C5D99004A21D9 /* Dog.m in Sources */,
+				EA2A3A23228BEE7B00AF88AA /* JiSuanqiManager.m in Sources */,
 				185E62991F209D8B00B3D9CC /* RuntimeExchangeMathViewCtrl.m in Sources */,
 				185E628F1F209D6E00B3D9CC /* UIButton+xc_button.m in Sources */,
 				EA2A3A18228BBC4400AF88AA /* NSKVONotifying_CustomKVOPerson.m in Sources */,
@@ -448,6 +467,7 @@
 				EA2A3A1C228BC55E00AF88AA /* UIViewController+VcListening.m in Sources */,
 				185E62971F209D8B00B3D9CC /* People+exchangeMeth.m in Sources */,
 				EA2A3A12228BB82400AF88AA /* CustomKVOPerson.m in Sources */,
+				EA2A3A20228BEE5C00AF88AA /* FunctionCodeDemoVc.m in Sources */,
 				18E0DB231F18706100118EE9 /* AppDelegate.m in Sources */,
 				EA2A3A0F228BB80400AF88AA /* CustomKVOViewController.m in Sources */,
 				18E0DB201F18706100118EE9 /* main.m in Sources */,
