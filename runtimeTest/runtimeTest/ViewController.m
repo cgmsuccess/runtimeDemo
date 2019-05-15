@@ -65,6 +65,11 @@
             [self.navigationController pushViewController:structCtrl animated:YES];
             break;
         }
+        case 6:{
+            UIViewController *vc = [NSClassFromString(@"CustomKVOViewController") new];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
             
         default:
             break;
